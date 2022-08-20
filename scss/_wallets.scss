@@ -1,0 +1,144 @@
+.wallets{
+    padding:40px 0;
+
+    &Inner{
+        @include inner;
+    }
+
+    .wallet{
+        background: lighten($purple-color, 70%);
+        color: $purple-color;
+        @include wallet-head;
+
+        &Inner{
+            @include inner;
+            .btn{
+                @include btn-reg;
+                background: $purple-color;
+                margin-top: 25px;
+            }
+        }
+
+        &Head{
+            width:100%;
+            margin-bottom:20px;
+            .btnhead{
+                @include btn-head;
+                color: $purple-color;
+                background: lighten($purple-color, 60%);
+            }
+        }
+
+        .case{
+            width:100%;
+
+            &Inner{
+                border: 1px solid lighten($purple-color, 60%);
+                @include case-inner;
+            }
+        }
+    }
+
+    .exchange{
+        background: lighten($blue-color, 40%);
+        color: $blue-color;
+        @include wallet-head;
+
+        &Inner{
+            @include inner;
+            .btn{
+                @include btn-reg;
+                background: $blue-color;
+                margin-top: 25px;
+            }
+        }
+
+        &Head{
+            width:100%;
+            margin-bottom:20px;
+            .btnhead{
+                @include btn-head;
+                color: $blue-color;
+                background: lighten($blue-color, 30%);
+            }
+        }
+
+        .case{
+            width:100%;
+
+            &Inner{
+                border: 1px solid lighten($blue-color, 30%);
+                @include case-inner;
+            }
+        }
+    }
+
+    .int{
+        background: lighten($ash-color, 40%);
+        color: $ash-color;
+        @include wallet-head;
+
+        &Inner{
+            @include inner;
+            .btn{
+                @include btn-reg;
+                background: $ash-color;
+                margin-top: 25px;
+            }
+        }
+
+        &Head{
+            width:100%;
+            margin-bottom:20px;
+            .btnhead{
+                @include btn-head;
+                color: $ash-color;
+                background: lighten($ash-color, 30%);
+            }
+        }
+
+        .case{
+            width:100%;
+
+            &Inner{
+                @include case-inner;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .explore{
+        background: lighten($orange-color, 35%);
+        color: $orange-color;
+        @include wallet-head;
+
+        &Inner{
+            @include inner;
+            .btn{
+                @include btn-reg;
+                background: $orange-color;
+                margin-top: 25px;
+            }
+        }
+
+        &Head{
+            width:100%;
+            margin-bottom:20px;
+            .btnhead{
+                @include btn-head;
+                color: $orange-color;
+                background: lighten($orange-color, 25%);
+            }
+        }
+
+        .case{
+            width:100%;
+
+            &Inner{
+                border: 1px solid lighten($orange-color, 25%);
+                @include case-inner;
+            }
+        }
+    }
+    
+}

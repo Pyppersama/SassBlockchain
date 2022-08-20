@@ -1,0 +1,88 @@
+@include media-md{
+    .head{
+        .headsticker{
+            a{
+                font-weight: bold;
+            }
+        }
+
+        .headnavLogo{
+            .logo{
+                height:20px;
+                width: 20px;
+            }
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+
+        .headnavLinks{
+            .search{
+                height:40px;
+                width:40px;
+                margin-right:15px;
+                border-radius:50%;
+                padding:5px;
+            }
+            p{
+                font-size: 25px;
+            }
+            h2{
+                font-size: 35px;
+                margin-right:15px;
+            }
+            .login{
+                padding:5px 20px;
+                margin-right:15px;
+                font-size: 15px;
+            }
+        }
+
+        .headBody{
+            padding: 70px 0;
+        }
+    }
+
+    .wallets{
+        .caseInner{
+            width:75%;
+        }
+    }
+
+    .breakInner{
+        padding: 50px 0;
+        h2{
+            font-size: 2rem;
+        }
+        .btn{
+            @include btn-reg;
+            padding: 6px 25px;
+            color: $blue-color;
+            background: $body-text;
+        }
+    }
+}
+
+@include media-lg{
+    .head{
+
+        .headBody{
+            padding: 90px 0;
+        &Inner{
+            h1{
+            font-size:3rem;
+        }
+            h3{
+                font-size:1.5rem;
+            }
+        }
+    }
+}
+
+    .wallets{
+        .caseInner{
+            width:55%;
+        }
+    }
+
+}

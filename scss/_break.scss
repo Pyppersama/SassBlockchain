@@ -1,0 +1,22 @@
+.break{
+    width: 100%;
+    background: url(../images/break.jpg);
+    margin-bottom: 50px;
+
+    &Inner{
+        @include inner;
+        color: $body-text;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        h2{
+            font-size: 1.3rem;
+        }
+        .btn{
+            @include btn-reg;
+            padding: 8px 10px;
+            color: $blue-color;
+            background: $body-text;
+        }
+    }
+}
